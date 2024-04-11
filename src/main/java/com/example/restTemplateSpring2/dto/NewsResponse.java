@@ -1,9 +1,6 @@
 package com.example.restTemplateSpring2.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,6 +8,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class NewsResponse {
-    private List<ArticleResponse> articles;
+    List<ArticleResponse> articles;
 }
